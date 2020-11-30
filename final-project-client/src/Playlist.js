@@ -92,7 +92,7 @@ class Playlist extends React.Component {
                 // TO DO how to handle code other than 200 because this gets
                 // exeucted in all cases
                 this.setState({error:{message:"Deleted"}})
-                document.getElementById("status").innerHTML = response.msg
+                document.getElementById("status").innerHTML = "Track Deleted"
                 },
 
                 (error) => {
