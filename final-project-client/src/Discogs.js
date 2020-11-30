@@ -108,7 +108,6 @@ class Discogs extends React.Component{
                 return (
                     <div>
                         <input type="text" name="filter" id="filter"/>
-                        <span id="status"></span>
                         <button type="button" onClick={()=>this.getTracks()}>Search</button>
                         <table>
                             <thead>
