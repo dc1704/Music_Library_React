@@ -112,8 +112,8 @@ class Playlist extends React.Component {
             if(this.state.tracks_count!==0){
                 // track results not null
                 return (
-                    <div>
-                        <Discogs/>
+                    <div class="music-class">
+                       <div class="right-area"><Discogs/></div>
                         <b><span id="status">Current Playlist</span></b><br></br>
                         <table>
                             <thead>

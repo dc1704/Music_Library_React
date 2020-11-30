@@ -14,8 +14,7 @@ class Header extends React.Component{
     render(){
         return(
             <header className={styles.Header}>
-                Welcome to {this.state.companyName}
-                <button onClick={()=>this.changeName()}>Change name</button>
+               <h1>Music Playlist</h1>
             </header>
             )
     }

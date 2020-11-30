@@ -25,7 +25,7 @@ class Discogs extends React.Component{
                     discogs_count : res.results.length,
                     isLoaded:true})
 
-                        document.getElementById("status").innerHTML = res.msg
+                        document.getElementById("status").innerHTML = "Results"
                     },
                     (error) => {
                         // only NO RESPONSE URL errors will trigger this code
@@ -108,6 +108,7 @@ class Discogs extends React.Component{
                 return (
                     <div>
                         <input type="text" name="filter" id="filter"/>
+                        <span id="status"></span>
                         <button type="button" onClick={()=>this.getTracks()}>Search</button>
                         <table>
                             <thead>
